@@ -1,0 +1,9 @@
+<section class="6u 12u(narrower)">
+	<div class="box post">
+		<a href="#" class="image left"><img src="{{ ['images/officers/',member.imgName] | join('') }}" alt="" /></a>
+		<div class="inner">
+			<h3>{{ member.name }}</h3>
+			<p style="font-size: 100%">{{ member.bio }}</p>
+		</div>
+	</div>
+</section>
