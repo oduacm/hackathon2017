@@ -28,6 +28,10 @@
     "name": "David Calano",
     "imgName": "david.jpg",
     "bio": "Computer science student and Android developer interested in artificial intelligence and virtual/augmented reality! Hack the planet!"
+  }, {
+    "name": "Nikolaus Barnhill",
+    "imgName": "Nick.jpg",
+    "bio": "I got into programming by being part of a robotics team. The experience fueled my passion for Science, Technology, Engineering, and Math, and now I'm part of the amazing Computer Science program here at ODU."
   }],
   "social": [{
     "platform": "Twitter",
