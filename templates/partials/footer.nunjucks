@@ -1,8 +1,8 @@
 <!-- Footer -->
   <div id="footer">
-    {# <div class="container">
+    <div class="container">
       <div class="row">
-        <section class="3u 6u(narrower) 12u$(mobilep)">
+        {# <section class="3u 6u(narrower) 12u$(mobilep)">
           <h3>Links to Stuff</h3>
           <ul class="links">
             <li><a href="#">Mattis et quis rutrum</a></li>
@@ -15,17 +15,18 @@
             <li><a href="#">Duis neque nisi dapibus</a></li>
             <li><a href="#">Example</a></li>
           </ul>
-        </section>
+        </section> #}
         <section class="6u 12u(narrower)">
           <h3>Get In Touch</h3>
-          <form>
+          <form action="https://formspree.io/{{email}}"
+      method="POST">
 
             <div class="row 50%">
               <div class="6u 12u(mobilep)">
                 <input type="text" name="name" id="name" placeholder="Name" />
               </div>
               <div class="6u 12u(mobilep)">
-                <input type="email" name="email" id="email" placeholder="Email" />
+                <input type="email" name="_replyto" id="email" placeholder="Email" />
               </div>
             </div>
             <div class="row 50%">
@@ -40,13 +41,14 @@
                 </ul>
               </div>
             </div>
+            <input type="text" name="_gotcha" style="display:none" />
           </form>
         </section>
       </div>
-    </div> #}
+    </div>
 
     <!-- Icons -->
-      <ul class="icons"> <!--Replace default links-->
+      <ul class="icons">
         {% for platform in social %}
           <li><a href="{{platform.link}}" class="icon {{platform.icon}}" target="_blank"><span class="label">{{platform.name}}</span></a></li>
         {% endfor %}
@@ -54,7 +56,7 @@
 
     <!-- Copyright -->
       <div class="copyright">
-        <ul class="menu"><!--Replace-->
+        <ul class="menu">
           <li>&copy; ODU ACM. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
         </ul>
       </div>

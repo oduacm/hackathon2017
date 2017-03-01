@@ -35,7 +35,7 @@ gulp.task('watch', () => {
   gulp.watch([
     path.join('templates', '**', '*.+(html|nunjucks)'),
     path.join('pages', '**', '*.+(html|nunjucks)'),
-    './data.json'
+    'data.json'
   ],
     ['nunjucks'])
 })
