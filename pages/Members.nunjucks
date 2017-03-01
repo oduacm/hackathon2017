@@ -1,0 +1,25 @@
+{% extends "layout.nunjucks" %}
+
+{% block navigation %}
+    {% import 'macros/nav.nunjucks' as nav %}
+
+    {{nav.active('members')}}
+{% endblock %}
+
+{% block content %}
+<!-- Posts -->
+<section class="wrapper style1"> <!--Board members maybe?-->
+	<div class="container">
+    {% for row in range(0, (members.length / 2.0) | round) -%}
+		<div class="row">
+      {% for i in range(0, 2) %}
+        {% if members[(row * 2 + i)] %}
+          {% set member = members[(row * 2 + i)] %}
+          {% include "partials/member.nunjucks" %}
+        {% endif %}
+      {% endfor %}
+    </div>
+    {%- endfor %}
+  </div>
+</section>
+{% endblock %}

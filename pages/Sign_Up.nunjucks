@@ -1,45 +1,12 @@
-<!DOCTYPE HTML>
-<!--
-	Arcana by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>ODU:Hack</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css"/>
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-	</head>
-	<body>
-		<div id="page-wrapper">
+{% extends "layout.nunjucks" %}
 
-    <!-- Header -->
-    <div id="header">
-    	<!-- Logo -->
-    		<h1><a href="index.html" id="logo">ODU: <em>Royal Hacks</em></a></h1>
+{% block navigation %}
+    {% import 'macros/nav.nunjucks' as nav %}
 
-        
-    
+    {{nav.active('sign-up')}}
+{% endblock %}
 
-    
-<!-- Nav -->
-<nav id="nav">
-	<ul>
-		<li class=""><a href="index.html">Home</a></li>
-		<li class=""><a href="Members.html">Officers</a></li>
-		
-		
-	</ul>
-</nav>
-
-
-    </div>
-
-    
+{% block content %}
 <!-- Main -->
 <section class="wrapper style1">
 	<div class="container">
@@ -145,42 +112,4 @@
 		</div>
 	</div>
 </section>
-
-
-    <!-- Footer -->
-  <div id="footer">
-    
-
-    <!-- Icons -->
-      <ul class="icons"> <!--Replace default links-->
-        
-          <li><a href="https://twitter.com/oduroyalhacks" class="icon fa-twitter" target="_blank"><span class="label"></span></a></li>
-        
-          <li><a href="https://www.instagram.com/oduroyalhacks/" class="icon fa-instagram" target="_blank"><span class="label"></span></a></li>
-        
-          <li><a href="https://www.facebook.com/profile.php?id=100015204603412&amp;lst=100006604985837%3A100015204603412%3A1488327101" class="icon fa-facebook" target="_blank"><span class="label"></span></a></li>
-        
-      </ul>
-
-    <!-- Copyright -->
-      <div class="copyright">
-        <ul class="menu"><!--Replace-->
-          <li>&copy; ODU ACM. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-        </ul>
-      </div>
-
-  </div>
-
-
-    </div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-
-	</body>
-</html>
+{% endblock %}

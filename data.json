@@ -1,0 +1,49 @@
+{
+  "members": [{
+    "name": "Joanna Borba",
+    "imgName": "joanna.PNG",
+    "bio": "Joanna Borba is a current Junior at ODU enrolled in the 5 year Master's plan. After college she hopes to work in the biotechnology field of gene mapping. On campus she is actively involved in over five organizations. In the spare free time she has not running around running organizations Joanna enjoys playing video games and going out to new restaurants."
+  }, {
+    "name": "Draper Wittkopp",
+    "imgName": "dwitt.jpg",
+    "bio": "Draper Wittkopp is finishing up his degree in Computer Science. When he's not at a computer, he's out hiking through the wilderness or diving in open waters."
+  }, {
+    "name": "Troy Calvert",
+    "imgName": "TR.JPG",
+    "bio": "Troy Calvert is an ODU alumni with a bachelor in Computer Science and a minor in Computer Engineering. With his degree, he hopes to work in the field of AI and study 2d and 3d rendering techniques.  In his free time, he likes to model and sculpt 3d figures and causally play video games."
+  }, {
+    "name": "Joshua Harris",
+    "imgName": "jha.jpg",
+    "bio": "Joshua Harris is a senior in Old Dominion University’s undergraduate computer science program. Joshua has close to a year of real world work experience through internships as a NASA LITES intern and developer at <a href='https://www.forrent.com' target='_blank'>ForRent.com</a>. Joshua is passionate about building applications with great user experiences, and open source projects. Currently, Joshua volunteers his skills for his local Code for America brigade, building a new client for citizens to learn about candidates for local government."
+  }, {
+    "name": "Michelle Graham",
+    "imgName": "michelle_g_pic.jpg",
+    "bio": "Michelle Graham is an undergraduate senior majoring in Computer Science at Old Dominion University. Her career interests lie in her passion for educational gaming. She enjoys making origami, the color blue, and trying new things!"
+  }, {
+    "name": "Amber Allen",
+    "imgName": "amber.jpg",
+    "bio": "Amber Allen is a senior at Old Dominion University studying Computer Science. She plans to graduate in the Spring of 2017 with a minor in Computer Engineering. She is currently the president of the student chapter of IEEE at ODU. She is interested in pursuing a career in cybersecurity after graduation. Her hobbies include composing music, volunteering within the community, and teaching children about programming."
+  }, {
+    "name": "David Calano",
+    "imgName": "david.jpg",
+    "bio": "Computer science student and Android developer interested in artificial intelligence and virtual/augmented reality! Hack the planet!"
+  }],
+  "social": [{
+    "platform": "Twitter",
+    "username": "ODURoyalHacks",
+    "link": "https://twitter.com/oduroyalhacks",
+    "icon": "fa-twitter"
+  },
+  {
+    "platform": "Instagram",
+    "username": "ODURoyalHacks",
+    "link" : "https://www.instagram.com/oduroyalhacks/",
+    "icon": "fa-instagram"
+  },
+  {
+    "platform": "Facebook",
+    "username": "ODURoyalHacks",
+    "link": "https://www.facebook.com/profile.php?id=100015204603412&lst=100006604985837%3A100015204603412%3A1488327101",
+    "icon": "fa-facebook"
+  }]
+}
