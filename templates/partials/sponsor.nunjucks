@@ -1,0 +1,8 @@
+<section class="6u 12u(narrower)">
+{# <section class=""> #}
+	{# <div class="box post"> #}
+	<div>
+		{# <a href="{{ sponsor.link }}" class="image"><img src="images/officers/{{sponsor.imgName}}" alt="{{sponsor.name}}" /></a> #}
+		<a href="{{ sponsor.link }}" target="_blank"><img style="width: 100%" src="images/sponsors/{{sponsor.imgName}}" alt="{{sponsor.name}}" /></a>
+	</div>
+</section>

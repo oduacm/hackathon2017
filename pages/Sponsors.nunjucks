@@ -7,66 +7,37 @@
 {% endblock %}
 
 {% block content %}
-			<!-- Main -->
-				<section class="wrapper style1">
-					<div class="container">
-						<div id="content">
+    <!-- Main -->
+    <section class="wrapper style1">
+        <div class="container">
+            <div id="content">
 
-							<!-- Content -->
+                <!-- Content -->
 
-								<article>
-									<header>
-										<h2>Our Sponsors</h2>
-										<p>VIP's</p>
-									</header>
-								</article>
+                <article>
+                    <header>
+                        <h2>Our Sponsors</h2>
+                        <p>Contact us below to sponsor the event!</p>
+                    </header>
+                </article>
 
-								<section class="wrapper style1"> <!--Board members maybe?-->
-					<div class="container">
-						<div class="row">
-							<section class="6u 12u(narrower)">
-								<div class="box post">
-									<a href="#" class="image left"><img src="images/pic01.jpg" alt="" /></a>
-									<div class="inner">
-										<h3>Important Company #1</h3>
-										<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
-									</div>
-								</div>
-							</section>
-							<section class="6u 12u(narrower)">
-								<div class="box post">
-									<a href="#" class="image left"><img src="images/pic02.jpg" alt="" /></a>
-									<div class="inner">
-										<h3>Important Company #2</h3>
-										<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
-									</div>
-								</div>
-							</section>
-						</div>
-						<div class="row">
-							<section class="6u 12u(narrower)">
-								<div class="box post">
-									<a href="#" class="image left"><img src="images/pic03.jpg" alt="" /></a>
-									<div class="inner">
-										<h3>Important Company #3</h3>
-										<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
-									</div>
-								</div>
-							</section>
-							<section class="6u 12u(narrower)">
-								<div class="box post">
-									<a href="#" class="image left"><img src="images/pic04.jpg" alt="" /></a>
-									<div class="inner">
-										<h3>Important Company #4</h3>
-										<p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu.</p>
-									</div>
-								</div>
-							</section>
-						</div>
-					</div>
-				</section>
+                <section class="wrapper style1">
+                    <!--Board members maybe?-->
+                    <div class="container">
+                        {% for row in range(0, (sponsors.length / 2.0) | round) -%}
+                    		<div class="row">
+                          {% for i in range(0, 2) %}
+                            {% if sponsors[(row * 2 + i)] %}
+                              {% set sponsor = sponsors[(row * 2 + i)] %}
+                              {% include "partials/sponsor.nunjucks" %}
+                            {% endif %}
+                          {% endfor %}
+                        </div>
+                        {%- endfor %}
+                    </div>
+                </section>
 
-						</div>
-					</div>
-				</section>
+            </div>
+        </div>
+    </section>
 {% endblock %}

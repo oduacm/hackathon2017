@@ -1,0 +1,24 @@
+{% extends "layout.nunjucks" %}
+
+{% block navigation %}
+    {% import 'macros/nav.nunjucks' as nav %}
+
+    {{nav.active('sponsors')}}
+{% endblock %}
+
+{% block content %}
+    <!-- Main -->
+    <section class="wrapper style1">
+        <div class="container">
+            <div clas="row">
+                <div class="8u -4u 12u(narrower)">
+                    <div id="content">
+                        <h2><i class="fa fa-paper-plane-o"></i>
+                            Thank you for contacting us!</h2>
+                        <p>We'll be in touch shortly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
