@@ -4,6 +4,8 @@
 	<ul>
 		<li class="{% if activePage == 'home' %} current {% endif %}"><a href="index.html">Home</a></li>
 		<li class="{% if activePage == 'members' %} current {% endif %}"><a href="Members.html">Officers</a></li>
+		<li class="{% if activePage == 'sponsors' %} current {% endif %}"><a href="Sponsors.html">Sponsors</a></li>
+		<li class="{% if activePage == 'schedule' %} current {% endif %}"><a href="Schedule.html">Schedule</a></li>
 		{# <li>
 			<a href="#">Dropdown</a>
 			<ul>

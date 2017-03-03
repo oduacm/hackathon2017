@@ -16,7 +16,7 @@
             <li><a href="#">Example</a></li>
           </ul>
         </section> #}
-        <section class="6u 12u(narrower)">
+        <section class="6u -3u 12u(narrower)">
           <h3>Get In Touch</h3>
           <form action="https://formspree.io/{{email}}"
       method="POST">

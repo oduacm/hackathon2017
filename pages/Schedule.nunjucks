@@ -1,0 +1,87 @@
+{% extends "layout.nunjucks" %}
+
+{% block navigation %}
+    {% import 'macros/nav.nunjucks' as nav %}
+
+    {{nav.active('schedule')}}
+{% endblock %}
+
+{% block content %}
+<!-- Posts -->
+<section class="wrapper style1"> <!--Board members maybe?-->
+	<div class="container">
+			<table>
+				<tr>
+					<th colspan="2">Saturday, April 8th</th>
+				</tr>
+				<tr>
+					<td>9 a.m.</td>
+					<td>Breakfast Served</td>
+				</tr>
+				<tr>
+					<td>10 a.m.</td>
+					<td>Opening Ceremonies <br>Start of Hackathon</td>
+				</tr>
+				<tr>
+					<td>11 a.m.</td>
+					<td>Begin Coding</td>
+				</tr>
+				<tr>
+					<td>12 p.m.</td>
+					<td>Lunch is Served</td>
+				</tr>
+				<tr>
+					<td>3-4 pm ish</td>
+					<td>Snacks</td>
+				</tr>
+				<tr>
+					<td>5 p.m.</td>
+					<td>Brain Break (Cards Against Humanity)</td>
+				</tr>
+				<tr>
+					<td>6 ish</td>
+					<td>Dinner is Served</td>
+				</tr>
+				<tr>
+					<td>10 p.m.</td>
+					<td>Must be out of constant hall<br>Halfway through hacking!</td>
+				</tr>
+				<tr>
+					<th colspan="2">Sunday, April 9th</th>
+				</tr>
+				<tr>
+					<td>12 a.m.</td>
+					<td>Midnight Snacks</td>
+				</tr>
+				<tr>
+					<td>2  a.m.</td>
+					<td>Brain Break (Super Smash Bros/MarioKart/Mario Party</td>
+				</tr>
+				<tr>
+					<td>4  a.m.</td>
+					<td>Snacks</td>
+				</tr>
+				<tr>
+					<td>9  a.m.</td>
+					<td>Breakfast 2 Served</td>
+				</tr>
+				<tr>
+					<td>10 a.m.</td>
+					<td>End Hacking</td>
+				</tr>
+				<tr>
+					<td>11 a.m.</td>
+					<td>Presentations/Judging</td>
+				</tr>
+				<tr>
+					<td>12 ish</td>
+					<td>Judges Deliberate/Lunch</td>
+				</tr>
+				<tr>
+					<td>12:30-12:45 ish</td>
+					<td>Winners Presented<br>Closing Ceremonies<br>End of Event</td>
+				</tr>
+			</table>
+</div>
+</section>
+{% endblock %}

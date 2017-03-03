@@ -1,6 +1,6 @@
 <section class="6u 12u(narrower)">
 	<div class="box post">
-		<a href="#" class="image left"><img src="{{ ['images/officers/',member.imgName] | join('') }}" alt="" /></a>
+		<a href="{{member.link}}" class="image left" {% if member.link %}target="_blank"{% endif %}><img src="images/officers/{{member.imgName}}" alt="{{member.name}}" /></a>
 		<div class="inner">
 			<h3>{{ member.name }}</h3>
 			<p style="font-size: 100%">{{ member.bio }}</p>
